@@ -1,5 +1,14 @@
 /* Responsive CSS for LoginScreen2 */
-
+.group {
+  position: absolute;
+  width: 116.11%;
+  height: 157.03%;
+  top: -20.9%;
+  left: -7.36%;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-08/Rda9gBrMNK.png) no-repeat center;
+  background-size: cover; /* Changed from 100% 100% to cover for better scaling */
+  z-index: 0; /* Ensure it stays behind other content */
+}
 /* Base responsive structure */
 html, body {
     margin: 0;
@@ -23,6 +32,13 @@ html, body {
   
   /* Tablet styles (768px to 1024px) */
   @media screen and (max-width: 1024px) {
+    .group {
+      width: 150%; /* Wider to ensure coverage */
+      height: 150%;
+      top: -25%;
+      left: -25%;
+    }
+
     .main-container {
       flex-direction: column;
       padding: 40px 20px;
@@ -102,6 +118,13 @@ html, body {
   
   /* Mobile styles (below 768px) */
   @media screen and (max-width: 767px) {
+    .group {
+      width: 200%; /* Even wider for mobile to ensure full coverage */
+      height: 200%;
+      top: -50%;
+      left: -50%;
+    }
+    
     .main-container {
       padding: 20px 15px;
     }
